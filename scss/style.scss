@@ -224,7 +224,7 @@ footer {
     main {
         background-image: none;
         background-color: $main-blue-color;
-        height: 40vh;
+        height: 50vh;
         h1 {
             font-size: 3.5em;
         }
@@ -292,6 +292,21 @@ footer {
         }
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    main {
+        height: 60vh;
+    }
+    #buttons {
+        a {
+            float: none; 
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+}
 }
 
 

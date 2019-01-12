@@ -226,7 +226,7 @@ footer {
         background-color: $main-blue-color;
         height: 60vh;
         h1 {
-            font-size: 3.5em;
+            font-size: 3.2em;
         }
         nav {
             .logo {
@@ -250,6 +250,7 @@ footer {
             margin:0 3px;
         }
     }
+    
     #galery {
         text-align: center;
         span {
@@ -304,10 +305,13 @@ footer {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     main {
-        height: 80vh;
+        h1 {
+            font-size: 2.7em;
+        }
     }
+
     #buttons {
         a {
             float: none; 
@@ -316,8 +320,14 @@ footer {
             width: 80%;
             margin: 20px auto;
         }
-        
     }
+
+}
+@media screen and (max-width: 320px) {
+    main {
+        height: 80vh;
+    }
+
     #galery {
         .container {
 

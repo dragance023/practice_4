@@ -188,7 +188,7 @@ footer {
     background-color: #374249;
     height: 60vh; }
     main h1 {
-      font-size: 3.5em; }
+      font-size: 3.2em; }
     main nav .logo {
       width: 100%;
       float: none;
@@ -238,16 +238,19 @@ footer {
     #contact form input[type="text"] {
       width: 100%;
       margin-top: 20px; } }
-@media screen and (max-width: 320px) {
-  main {
-    height: 80vh; }
+@media screen and (max-width: 420px) {
+  main h1 {
+    font-size: 2.7em; }
 
   #buttons a {
     float: none;
     display: block;
     text-align: center;
     width: 80%;
-    margin: 20px auto; }
+    margin: 20px auto; } }
+@media screen and (max-width: 320px) {
+  main {
+    height: 80vh; }
 
   #galery .container img {
     width: 130px; } }

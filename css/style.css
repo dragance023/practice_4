@@ -216,7 +216,7 @@ footer {
         float: none;
         margin: 0 auto; }
       #galery .container img {
-        width: 230px; }
+        width: 200px; }
 
   #pricing a {
     margin: 20px 0;
@@ -238,9 +238,9 @@ footer {
     #contact form input[type="text"] {
       width: 100%;
       margin-top: 20px; } }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   main {
-    height: 60vh; }
+    height: 80vh; }
 
   #buttons a {
     float: none;

@@ -73,6 +73,9 @@ main {
 #galery {
     padding: 50px 35vw;
     background: $sections-background-color;
+    h2, span {
+        display: none;
+    }
     .container {
         @include clearfix;
         .right-image {
@@ -91,6 +94,9 @@ main {
 
 #pricing {
     text-align: center;
+    a {
+        display: none;
+    }
     h1 {
         padding: 20px 0;
         text-transform: uppercase;
@@ -100,7 +106,7 @@ main {
         border-collapse: collapse;
         text-align: center;
         margin: 80px auto;
-
+        width: 50%;
         td {
             color: #fff;
         }
@@ -128,11 +134,14 @@ main {
         .dark {
             background: $main-blue-color;
         }
+        .bright {
+            color: $main-text-color;
+        }
     }
 }
 
 #contact {
-    padding: 0 320px;
+    padding: 0 280px;
     @include clearfix;
     text-align: center;
     h1 {
@@ -181,4 +190,108 @@ footer {
         color: $main-red-color;
     }
 }
+
+
+@media screen and (max-width: 1350px) {
+
+    #galery {
+        padding: 50px 15vw;
+    }
+
+
+    #contact {
+        padding: 0 150px;
+        .map, form {
+            float: none;
+            margin: 30px 0;
+        }
+        form {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .map {
+            iframe {
+                width: 30vw;
+                height: 20vh;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        background-image: none;
+        background-color: $main-blue-color;
+        height: 40vh;
+        h1 {
+            font-size: 3.5em;
+        }
+        nav {
+            .logo {
+                width: 100%;
+                float: none;
+                margin: 0;
+            }
+            ul {
+                float: none;
+                li {
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    #buttons {
+        a {
+            padding: 10px 15px;
+            margin:0 3px;
+        }
+    }
+    #galery {
+        text-align: center;
+        span {
+            color: $main-red-color;
+        }
+        h2, span {
+            display: block;
+        }
+        .container {
+            width: 100%;
+            img, .right-image {
+                float: none;
+                margin: 0 auto;
+            }
+            img {
+                width: 230px;
+            }
+        }
+    }
+
+    #pricing {
+        a {
+            margin: 20px 0;
+            display: inline-block;
+            @include buttons;
+            text-decoration: none;
+        }
+        table {
+            display: none;
+        }
+    }
+    
+    #contact {
+        padding: 0 10px;
+        .map {
+            iframe {
+                width: 50vw;
+                height: 30vh;
+            }
+        }
+    }
+
+}
+
 

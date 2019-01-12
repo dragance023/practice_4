@@ -73,6 +73,8 @@ main {
 #galery {
   padding: 50px 35vw;
   background: #f3f7f9; }
+  #galery h2, #galery span {
+    display: none; }
   #galery .container:before, #galery .container:after {
     content: "";
     display: table; }
@@ -89,13 +91,16 @@ main {
 
 #pricing {
   text-align: center; }
+  #pricing a {
+    display: none; }
   #pricing h1 {
     padding: 20px 0;
     text-transform: uppercase; }
   #pricing table {
     border-collapse: collapse;
     text-align: center;
-    margin: 80px auto; }
+    margin: 80px auto;
+    width: 50%; }
     #pricing table td {
       color: #fff; }
     #pricing table thead td:last-child {
@@ -111,9 +116,11 @@ main {
       background: #f38181; }
     #pricing table .dark {
       background: #374249; }
+    #pricing table .bright {
+      color: #797979; }
 
 #contact {
-  padding: 0 320px;
+  padding: 0 280px;
   text-align: center; }
   #contact:before, #contact:after {
     content: "";
@@ -159,5 +166,72 @@ footer {
   margin-top: 50px; }
   footer span {
     color: #f38181; }
+
+@media screen and (max-width: 1350px) {
+  #galery {
+    padding: 50px 15vw; }
+
+  #contact {
+    padding: 0 150px; }
+    #contact .map, #contact form {
+      float: none;
+      margin: 30px 0; }
+    #contact form {
+      width: 100%;
+      margin: 0 auto; }
+    #contact .map iframe {
+      width: 30vw;
+      height: 20vh; } }
+@media screen and (max-width: 650px) {
+  main {
+    background-image: none;
+    background-color: #374249;
+    height: 40vh; }
+    main h1 {
+      font-size: 3.5em; }
+    main nav .logo {
+      width: 100%;
+      float: none;
+      margin: 0; }
+    main nav ul {
+      float: none; }
+      main nav ul li {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px; }
+
+  #buttons a {
+    padding: 10px 15px;
+    margin: 0 3px; }
+
+  #galery {
+    text-align: center; }
+    #galery span {
+      color: #f38181; }
+    #galery h2, #galery span {
+      display: block; }
+    #galery .container {
+      width: 100%; }
+      #galery .container img, #galery .container .right-image {
+        float: none;
+        margin: 0 auto; }
+      #galery .container img {
+        width: 230px; }
+
+  #pricing a {
+    margin: 20px 0;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #797979;
+    border-radius: 30px;
+    text-decoration: none; }
+  #pricing table {
+    display: none; }
+
+  #contact {
+    padding: 0 10px; }
+    #contact .map iframe {
+      width: 50vw;
+      height: 30vh; } }
 
 /*# sourceMappingURL=style.css.map */

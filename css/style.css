@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #797979; }
 
+main {
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+  height: 100vh; }
+  main .logo {
+    float: right;
+    font-size: 22px;
+    background: #f38181;
+    height: 100%;
+    margin-left: 22px; }
+    main .logo i {
+      color: #fff;
+      padding: 14px 20px; }
+  main nav {
+    height: 50px;
+    background: #374249; }
+    main nav ul {
+      list-style: none;
+      padding-top: 15px;
+      float: right; }
+      main nav ul li {
+        display: inline-block;
+        padding: 0 20px; }
+        main nav ul li a {
+          text-decoration: none;
+          color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

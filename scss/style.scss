@@ -7,6 +7,9 @@ main {
     background-image: url('../slike/intro.jpg');
     background-size: cover;
     height: 100vh;
+    // relative
+    position: relative;
+    @include clearfix;
     .logo {
         float: right;
         font-size: 22px;
@@ -21,6 +24,7 @@ main {
     nav {
         height: 50px;
         background: $main-blue-color;
+        @include clearfix;
         ul {
             list-style: none;
             padding-top: 15px;
@@ -34,6 +38,147 @@ main {
                 }
             }
         }
+    }
+    .text-container {
+        background: #16374b42;
+        text-align: center;
+        // absolute
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        h1, h5 {
+            color: #fff;
+            padding: 5px;
+        }
+        h5:nth-child(3) {
+            padding-bottom: 10px;
+        }
+
+    }
+
+}
+
+#buttons {
+    padding-right: 50px;
+    padding: 30px 0;
+    @include clearfix;
+    a {
+        @include buttons;
+        text-decoration: none;
+        margin: 0 20px;
+        float: right;
+    }
+}
+
+#galery {
+    padding: 50px 35vw;
+    background: $sections-background-color;
+    .container {
+        @include clearfix;
+        .right-image {
+            float: right;
+        }
+    }
+    img {
+        border-radius: 50%;
+        width: 150px;
+        float: left;
+        display: block;
+        padding: 18px 0;
+
+    }
+}
+
+#pricing {
+    text-align: center;
+    h1 {
+        padding: 20px 0;
+        text-transform: uppercase;
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        margin: 80px auto;
+
+        td {
+            color: #fff;
+        }
+        thead {
+            td:last-child {
+                border: none;
+                padding: 10px 30px;
+                background: $main-red-color;
+            }
+        }
+        tbody {
+            td {
+                padding: 10px 30px;
+                border: 1px solid $main-text-color;
+            }
+            tr:first-child {
+                & > td:nth-child(1), & > td:nth-child(2) {
+                    border: none;
+                }
+            }
+        }
+        .location {
+            background: $main-red-color;
+        }
+        .dark {
+            background: $main-blue-color;
+        }
+    }
+}
+
+#contact {
+    padding: 0 320px;
+    @include clearfix;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+        margin: 52px 0;
+    }
+    .map {
+        float: left;
+    }
+    form {
+        padding: 20px;
+        background-color: $main-red-color;
+        width: 50%;
+        textarea {
+            display: block;
+            width: 100%;
+            height: 90px;
+        }
+        @include clearfix;
+        float: right;
+        #select {
+            width: 20%;
+            float: left;
+        }
+        input, select {
+            height: 30px;
+        }
+        input[type="text"] {
+            width: 70%;
+            float: right;
+        }
+        input[type="email"] {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
+
+footer {
+    background: $main-blue-color;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    span {
+        color: $main-red-color;
     }
 }
 

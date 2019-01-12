@@ -17,3 +17,10 @@
 	    clear: both;
 	}
 }
+
+@mixin buttons {
+	padding: 15px 30px;
+	border: 1px solid $main-text-color;
+	border-radius: 30px;
+}
+

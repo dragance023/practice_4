@@ -8,7 +8,13 @@
 main {
   background-image: url("../slike/intro.jpg");
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
+  main:before, main:after {
+    content: "";
+    display: table; }
+  main:after {
+    clear: both; }
   main .logo {
     float: right;
     font-size: 22px;
@@ -21,6 +27,11 @@ main {
   main nav {
     height: 50px;
     background: #374249; }
+    main nav:before, main nav:after {
+      content: "";
+      display: table; }
+    main nav:after {
+      clear: both; }
     main nav ul {
       list-style: none;
       padding-top: 15px;
@@ -31,5 +42,122 @@ main {
         main nav ul li a {
           text-decoration: none;
           color: #fff; }
+  main .text-container {
+    background: #16374b42;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    main .text-container h1, main .text-container h5 {
+      color: #fff;
+      padding: 5px; }
+    main .text-container h5:nth-child(3) {
+      padding-bottom: 10px; }
+
+#buttons {
+  padding-right: 50px;
+  padding: 30px 0; }
+  #buttons:before, #buttons:after {
+    content: "";
+    display: table; }
+  #buttons:after {
+    clear: both; }
+  #buttons a {
+    padding: 15px 30px;
+    border: 1px solid #797979;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 20px;
+    float: right; }
+
+#galery {
+  padding: 50px 35vw;
+  background: #f3f7f9; }
+  #galery .container:before, #galery .container:after {
+    content: "";
+    display: table; }
+  #galery .container:after {
+    clear: both; }
+  #galery .container .right-image {
+    float: right; }
+  #galery img {
+    border-radius: 50%;
+    width: 150px;
+    float: left;
+    display: block;
+    padding: 18px 0; }
+
+#pricing {
+  text-align: center; }
+  #pricing h1 {
+    padding: 20px 0;
+    text-transform: uppercase; }
+  #pricing table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 80px auto; }
+    #pricing table td {
+      color: #fff; }
+    #pricing table thead td:last-child {
+      border: none;
+      padding: 10px 30px;
+      background: #f38181; }
+    #pricing table tbody td {
+      padding: 10px 30px;
+      border: 1px solid #797979; }
+    #pricing table tbody tr:first-child > td:nth-child(1), #pricing table tbody tr:first-child > td:nth-child(2) {
+      border: none; }
+    #pricing table .location {
+      background: #f38181; }
+    #pricing table .dark {
+      background: #374249; }
+
+#contact {
+  padding: 0 320px;
+  text-align: center; }
+  #contact:before, #contact:after {
+    content: "";
+    display: table; }
+  #contact:after {
+    clear: both; }
+  #contact h1 {
+    text-transform: uppercase;
+    margin: 52px 0; }
+  #contact .map {
+    float: left; }
+  #contact form {
+    padding: 20px;
+    background-color: #f38181;
+    width: 50%;
+    float: right; }
+    #contact form textarea {
+      display: block;
+      width: 100%;
+      height: 90px; }
+    #contact form:before, #contact form:after {
+      content: "";
+      display: table; }
+    #contact form:after {
+      clear: both; }
+    #contact form #select {
+      width: 20%;
+      float: left; }
+    #contact form input, #contact form select {
+      height: 30px; }
+    #contact form input[type="text"] {
+      width: 70%;
+      float: right; }
+    #contact form input[type="email"] {
+      width: 100%;
+      margin: 20px 0; }
+
+footer {
+  background: #374249;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px; }
+  footer span {
+    color: #f38181; }
 
 /*# sourceMappingURL=style.css.map */

@@ -186,7 +186,7 @@ footer {
   main {
     background-image: none;
     background-color: #374249;
-    height: 50vh; }
+    height: 60vh; }
     main h1 {
       font-size: 3.5em; }
     main nav .logo {
@@ -247,6 +247,9 @@ footer {
     display: block;
     text-align: center;
     width: 80%;
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  #galery .container img {
+    width: 130px; } }
 
 /*# sourceMappingURL=style.css.map */

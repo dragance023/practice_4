@@ -224,7 +224,7 @@ footer {
     main {
         background-image: none;
         background-color: $main-blue-color;
-        height: 50vh;
+        height: 60vh;
         h1 {
             font-size: 3.5em;
         }
@@ -316,7 +316,17 @@ footer {
             width: 80%;
             margin: 20px auto;
         }
-}
+        
+    }
+    #galery {
+        .container {
+
+            img {
+                width: 130px;
+            }
+        }
+    }
+
 }
 
 

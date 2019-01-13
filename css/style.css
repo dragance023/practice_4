@@ -42,6 +42,8 @@ main {
         main nav ul li a {
           text-decoration: none;
           color: #fff; }
+          main nav ul li a:hover {
+            text-decoration: underline; }
   main .text-container {
     background: #16374b42;
     text-align: center;
@@ -69,12 +71,20 @@ main {
     text-decoration: none;
     margin: 0 20px;
     float: right; }
+    #buttons a:hover {
+      background: #cfd1d3;
+      color: #fff; }
 
 #galery {
   padding: 50px 35vw;
-  background: #f3f7f9; }
+  background: #f3f7f9;
+  text-align: center; }
+  #galery span {
+    color: #f38181; }
   #galery h2, #galery span {
     display: none; }
+  #galery h2 {
+    margin-top: 60px; }
   #galery .container:before, #galery .container:after {
     content: "";
     display: table; }
@@ -82,6 +92,8 @@ main {
     clear: both; }
   #galery .container .right-image {
     float: right; }
+  #galery .container:hover > h2, #galery .container:hover > span {
+    display: block; }
   #galery img {
     border-radius: 50%;
     width: 150px;
@@ -204,19 +216,15 @@ footer {
     padding: 10px 15px;
     margin: 0 3px; }
 
-  #galery {
-    text-align: center; }
-    #galery span {
-      color: #f38181; }
-    #galery h2, #galery span {
-      display: block; }
-    #galery .container {
-      width: 100%; }
-      #galery .container img, #galery .container .right-image {
-        float: none;
-        margin: 0 auto; }
-      #galery .container img {
-        width: 200px; }
+  #galery h2, #galery span {
+    display: block; }
+  #galery .container {
+    width: 100%; }
+    #galery .container img, #galery .container .right-image {
+      float: none;
+      margin: 0 auto; }
+    #galery .container img {
+      width: 200px; }
 
   #pricing a {
     margin: 20px 0;
@@ -248,7 +256,7 @@ footer {
     text-align: center;
     width: 80%;
     margin: 20px auto; } }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 325px) {
   main {
     height: 80vh; }
 

@@ -35,6 +35,10 @@ main {
                 a {
                     text-decoration: none;
                     color: #fff;
+
+                     &:hover {
+                         text-decoration: underline;
+                     }
                 }
             }
         }
@@ -67,19 +71,36 @@ main {
         text-decoration: none;
         margin: 0 20px;
         float: right;
+
+        &:hover {
+            background: $buttons-hover-color;
+            color: #fff;
+        }
     }
+
+
 }
 
 #galery {
     padding: 50px 35vw;
     background: $sections-background-color;
+    text-align: center;
+    span {
+        color: $main-red-color;
+    }
     h2, span {
         display: none;
+    }
+    h2 {
+        margin-top: 60px;
     }
     .container {
         @include clearfix;
         .right-image {
             float: right;
+        }
+        &:hover > h2,&:hover > span {
+            display: block;
         }
     }
     img {
@@ -88,9 +109,9 @@ main {
         float: left;
         display: block;
         padding: 18px 0;
-
     }
 }
+
 
 #pricing {
     text-align: center;
@@ -252,10 +273,7 @@ footer {
     }
     
     #galery {
-        text-align: center;
-        span {
-            color: $main-red-color;
-        }
+
         h2, span {
             display: block;
         }
@@ -323,7 +341,7 @@ footer {
     }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 325px) {
     main {
         height: 80vh;
     }

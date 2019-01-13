@@ -94,7 +94,11 @@ main {
     float: right; }
   #galery .container:hover > h2, #galery .container:hover > span {
     display: block; }
+  #galery .container:hover > img {
+    opacity: 1; }
   #galery img {
+    transition: ease-in-out 300ms;
+    opacity: .7;
     border-radius: 50%;
     width: 150px;
     float: left;

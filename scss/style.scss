@@ -102,8 +102,13 @@ main {
         &:hover > h2,&:hover > span {
             display: block;
         }
+        &:hover > img {
+            opacity: 1;
+        }
     }
     img {
+        transition: ease-in-out 300ms;
+        opacity: .7;
         border-radius: 50%;
         width: 150px;
         float: left;
